@@ -53,9 +53,3 @@ project-root/
 Notes:
 Ensure the virtual environment (venv) is ignored in Git.
 Always clean the PDF headers/footers to improve vector quality.
-
-
-
-
-
-
