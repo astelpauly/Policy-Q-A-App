@@ -6,33 +6,33 @@ The app reads a PDF, creates embeddings (vectors), stores them in a FAISS index,
 
 How to Run This Project
 
-1. Clone the repository
+1. Clone the repository:
 git clone <your-repo-url>
 cd <your-repo-folder>
 
-2. Create a virtual environment
+2. Create a virtual environment:
 python -m venv venv
-Activate it
+Activate it.
 
-3. Install required packages
+3. Install required packages:
 -> pip install -r requirements.txt
 
-4. Create Vectors
-Add your PDF file to the data/ folder.
-Make sure the file path in built_index.py points to your PDF.
-If your PDF contains headers, footers, or page numbers, clean them before running the index.
-Run the script to build the FAISS index:
--> python built_index.py
+4. Create Vectors:
+   Add your PDF file to the data/ folder.
+   Make sure the file path in built_index.py points to your PDF.
+   If your PDF contains headers, footers, or page numbers, clean them before running the index.
+   Run the script to build the FAISS index:
+   -> python built_index.py
 
-Vectors will be created in data/faiss_index.
+   Vectors will be created in data/faiss_index.
 
-5. Configure Secrets
+6. Configure Secrets
 Create a .env file in the project root.
 Add your Hugging Face inference API key:
 
 HF_TOKEN=your_huggingface_token
 
-6. Run the Streamlit App
+6. Run the Streamlit App:
 -> streamlit run app.py
 The app will open in your default browser.
 Enter a question about your PDF and get an answer from the LLM.
