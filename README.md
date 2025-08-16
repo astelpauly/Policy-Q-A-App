@@ -7,15 +7,15 @@ The app reads a PDF, creates embeddings (vectors), stores them in a FAISS index,
 How to Run This Project
 
 1. Clone the repository:
-git clone https://github.com/astelpauly/Policy-Q-A-App.git
-cd "Policy-Q-A-App"
+    git clone https://github.com/astelpauly/Policy-Q-A-App.git
+    cd "Policy-Q-A-App"
 
 2. Create a virtual environment:
-python -m venv venv
-Activate it.
+    python -m venv venv
+    Activate it.
 
 3. Install required packages:
--> pip install -r requirements.txt
+    -> pip install -r requirements.txt
 
 4. Create Vectors:
    Add your PDF file to the data/ folder.
@@ -26,16 +26,16 @@ Activate it.
 
    Vectors will be created in data/faiss_index.
 
-6. Configure Secrets
-Create a .env file in the project root.
-Add your Hugging Face inference API key:
+5. Configure Secrets
+    Create a .env file in the project root.
+    Add your Hugging Face inference API key:
 
-HF_TOKEN=your_huggingface_token
+    HF_TOKEN=your_huggingface_token
 
 6. Run the Streamlit App:
--> streamlit run app.py
-The app will open in your default browser.
-Enter a question about your PDF and get an answer from the LLM.
+    -> streamlit run app.py
+    The app will open in your default browser.
+    Enter a question about your PDF and get an answer from the LLM.
 
 Project Structure:
 project-root/
