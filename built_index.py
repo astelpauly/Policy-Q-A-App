@@ -12,7 +12,7 @@ def load_pdf(file_path, start_page=5, end_page=19):
         page_text = reader.pages[i].extract_text()
         if page_text:
             text += page_text + "\n"
-    pattern = r"^\d+\s*TNP  2024 \| TNP INDIA EMPLOYEE HANDBOOK VERSION\s+\d+"
+    pattern = r"#add your header and footer pattern here"
     clean_text = re.sub(pattern, "", text, flags=re.MULTILINE)
     return clean_text
 
@@ -35,7 +35,7 @@ def create_vector_store(cleaned_text):
     print(f"✅ Vector store saved at {folder_path}")
 
 if __name__ == "__main__":
-    pdf_path = os.path.join("data", "TNP India Handbook 2024 12.pdf")
+    pdf_path = os.path.join("data", "Add your pdf file folder path")
     text = load_pdf(pdf_path) 
     print("📄 PDF loaded.")
     create_vector_store(text)
