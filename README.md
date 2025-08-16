@@ -7,8 +7,8 @@ The app reads a PDF, creates embeddings (vectors), stores them in a FAISS index,
 How to Run This Project
 
 1. Clone the repository:
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone https://github.com/astelpauly/Policy-Q-A-App.git
+cd "Policy-Q-A-App"
 
 2. Create a virtual environment:
 python -m venv venv
